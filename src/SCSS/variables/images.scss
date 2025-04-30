@@ -1,0 +1,45 @@
+.image-container {
+  width: 180%; 
+  max-width: 1000px;
+  position:relative;
+  overflow: hidden;
+}
+
+.custom-img {
+  width: 100%;
+  height: auto; 
+  object-fit: cover; 
+  border-radius: 0.1rem; 
+  display: block;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.top-24 {
+  top: 1rem;
+}
+
+.main-image {
+  width: 180%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.375rem; 
+  display: block;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 0.5rem; 
+  margin-top: 1rem;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.375rem; 
+  cursor: pointer;
+}

@@ -1,0 +1,42 @@
+@use "../variables/colors.scss" as *;
+@use "../variables/fonts.scss" as *;
+
+.shop-button {
+  padding: 0.75rem 2rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 500;
+  background-color: $font-color;
+  color: white;
+}
+
+.shop-button:hover {
+  background-color: $font-color-light;
+}
+
+.shop-button--full-width{
+  width: 100%;
+}
+
+.flex-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.flex-button.selected {
+  border-color: $font-color;
+  background-color: $font-color;
+  color: white;
+}
+.flex-button:hover {
+  background-color: #e2e8f0;
+}

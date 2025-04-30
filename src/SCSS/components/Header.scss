@@ -1,0 +1,76 @@
+@use "../variables/colors.scss" as *;
+@use "../variables/fonts.scss" as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: $background;
+
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1rem;
+
+    @media (min-width: 768px) {
+      max-width: 768px;
+    }
+
+    @media (min-width: 1256px) {
+      max-width: 1256px;
+    }
+
+    @media (min-width: 1500px) {
+      max-width: 1500px;
+    }
+
+    @media (min-width: 2000px) {
+      max-width: 2000px;
+    }
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-family: $logo;
+    letter-spacing: 0.05em;
+    color: $font-color;
+  }
+
+  .nav {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+
+  .link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+
+    &:hover {
+      color: #78716c;
+    }
+  }
+
+  .icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+}

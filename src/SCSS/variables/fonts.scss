@@ -1,0 +1,64 @@
+@use "../variables/colors.scss" as *;
+
+$logo: serif;
+$font: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+$font-size-headline: 3rem;
+$font-size-medium-headline: 1.875rem;
+$font-size-small-headline: 1.5rem;
+
+.text-content {
+  width: 180%;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+}
+
+.font-medium {
+  font-weight: 500;
+  font-size: inherit;
+  color: $font-color-light;
+  margin-bottom: 0.5rem;
+}
+
+.font-medium-dark {
+  font-weight: 500;
+  font-size: inherit;
+  color: $font-color;
+  margin-bottom: 0.5rem;
+}
+
+.headline {
+  color: $font-color;
+  font-size: $font-size-headline;
+  line-height: 1;
+  font-family: $font;
+  margin: 0px px 24px;
+  margin-bottom: 1.5rem;
+  font-weight: inherit;
+}
+
+.medium-headline {
+  color: $font-color;
+  font-size: $font-size-medium-headline;
+  font-family: $font;
+  font-weight: inherit;
+  line-height: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.small-headline {
+  color: $font-color;
+  font-size: $font-size-small-headline;
+  margin-bottom: 1.5rem;
+  line-height: 2rem;
+}
+
+.description {
+  color: $font-color;
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+.small-description {
+  color: $font-color-light;
+  margin-bottom: 1rem;
+}
