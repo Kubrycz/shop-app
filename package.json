@@ -28,8 +28,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+     
     ]
   },
   "browserslist": {
@@ -43,5 +42,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint": "^9.25.1",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.0.0",
+    "typescript-eslint": "^8.31.1"
   }
 }

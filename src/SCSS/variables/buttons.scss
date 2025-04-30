@@ -40,3 +40,15 @@
 .flex-button:hover {
   background-color: #e2e8f0;
 }
+
+.email-input {
+  flex-grow: 1;
+  max-width: 300px;
+  border: none;
+  outline: none;
+}
+
+.email-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #a8a29e; 
+}

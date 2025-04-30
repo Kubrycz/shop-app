@@ -44,6 +44,9 @@ $font-size-small-headline: 1.5rem;
   line-height: 2.25rem;
   margin-bottom: 0.5rem;
 }
+.medium-headline--center {
+  text-align: center;
+}
 
 .small-headline {
   color: $font-color;
@@ -61,4 +64,8 @@ $font-size-small-headline: 1.5rem;
 .small-description {
   color: $font-color-light;
   margin-bottom: 1rem;
+}
+
+.small-description--center {
+  text-align: center;
 }

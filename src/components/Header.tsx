@@ -15,7 +15,7 @@ const Header = () => {
             <i className="fas fa-search" />
           </button>
           <button className="icon">
-            <i className="fas fa-shopping-bag"/>
+            <i className="fas fa-shopping-bag" />
           </button>
         </div>
       </div>

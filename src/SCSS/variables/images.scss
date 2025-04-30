@@ -1,16 +1,46 @@
 .image-container {
-  width: 180%; 
+  width: 180%;
   max-width: 1000px;
-  position:relative;
+  position: relative;
   overflow: hidden;
 }
 
 .custom-img {
   width: 100%;
-  height: auto; 
-  object-fit: cover; 
-  border-radius: 0.1rem; 
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.1rem;
   display: block;
+}
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 16rem;
+  overflow: visible;
+}
+.product-image {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 1rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: transform 0.4s ease, width 0.4s ease;
+  transform-origin: center;
+  z-index: 5;
+  position: relative;
+
+  &:hover {
+    transform: scale(1.2);
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    position: absolute;
+    max-height: calc(16rem + 10rem); 
+  }
 }
 
 .sticky {
@@ -25,14 +55,14 @@
   width: 180%;
   height: auto;
   object-fit: cover;
-  border-radius: 0.375rem; 
+  border-radius: 0.375rem;
   display: block;
 }
 
 .image-gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 0.5rem; 
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
   margin-top: 1rem;
 }
 
@@ -40,6 +70,6 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 0.375rem; 
+  border-radius: 0.375rem;
   cursor: pointer;
 }
