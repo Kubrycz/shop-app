@@ -9,6 +9,8 @@
   z-index: 50;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   background-color: $background;
+  user-select: none;
+  caret-color: transparent;
 
   .container {
     width: 100%;
@@ -45,6 +47,7 @@
     font-family: $logo;
     letter-spacing: 0.05em;
     color: $font-color;
+    cursor: pointer;
   }
 
   .nav {

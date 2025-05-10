@@ -1,6 +1,24 @@
 @use "../variables/colors.scss" as *;
 @use "../variables/fonts.scss" as *;
 
+// ......................footer............
+.unstyled-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: #52525b;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: #1c1917; // hover:text-stone-800
+  }
+}
+// ........................................
+
 .shop-button {
   padding: 0.75rem 2rem;
   border: 1px solid #d1d5db;
@@ -19,7 +37,7 @@
   background-color: $font-color-light;
 }
 
-.shop-button--full-width{
+.shop-button--full-width {
   width: 100%;
 }
 
@@ -50,5 +68,45 @@
 
 .email-input:focus {
   outline: none;
-  box-shadow: 0 0 0 2px #a8a29e; 
+  box-shadow: 0 0 0 2px #a8a29e;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  user-select: none;
+  caret-color: transparent;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+.button-collection {
+  padding: 0.5rem 0.5rem;
+  border: 1px solid $font-color;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 1rem;
+  font-family: inherit;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: $background;
+}
+
+.button-collection.selected {
+  border-color: $font-color;
+  background-color: $font-color;
+  color: white;
+}
+
+.button-collection:hover {
+  background-color: #e2e8f0;
+  color: $font-color;
 }

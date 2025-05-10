@@ -35,6 +35,9 @@ $font-size-small-headline: 1.5rem;
   margin-bottom: 1.5rem;
   font-weight: inherit;
 }
+.headline--center {
+  text-align: center;
+}
 
 .medium-headline {
   color: $font-color;
@@ -54,11 +57,19 @@ $font-size-small-headline: 1.5rem;
   margin-bottom: 1.5rem;
   line-height: 2rem;
 }
+.small-headline--center {
+  text-align: center;
+  font-family: $font;
+}
 
 .description {
   color: $font-color;
   font-size: 1.125rem;
   margin-bottom: 2rem;
+}
+.description--center {
+  text-align: center;
+  color: $font-color-light;
 }
 
 .small-description {
@@ -68,4 +79,23 @@ $font-size-small-headline: 1.5rem;
 
 .small-description--center {
   text-align: center;
+}
+
+.footer-description {
+  font-size: 1rem;
+  color: $font;
+  font-family: $font;
+  margin-bottom: 1rem;
+  font-weight: inherit;
+}
+.footer-other-desc {
+  font-size: inherit;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: $font;
+}
+.AboutPage-photoText {
+  font-style: italic;
+  color: $font-color-light;
 }

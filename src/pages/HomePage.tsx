@@ -18,8 +18,11 @@ import IngrediensTextSection from "../components/IngredientsTextSection";
 import RecomendationSection from "../components/RecomendationSection";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="home-background">
       {/* --------------Scection Welcome------------- */}
@@ -31,7 +34,7 @@ const HomePage = () => {
               Handcrafted perfumes inspired by nature's elements, designed for
               those who appreciate minimalist luxury and oragnic essences.
             </p>
-            <button className="shop-button">Shop Collection</button>
+            <button className="shop-button" onClick={()=> navigate("/shop")}>Shop Collection</button>
           </div>
           <div className="image-container">
             <img
@@ -92,7 +95,10 @@ const HomePage = () => {
         {/* ---------Recomendation Section------------ */}
         <div className="section-container">
           <div className="medium-headline medium-headline--center">
-            <div style={{marginTop:"-3rem", marginBottom:"2rem"}}> You May Also Like</div>
+            <div style={{ marginTop: "-3rem", marginBottom: "2rem" }}>
+              {" "}
+              You May Also Like
+            </div>
           </div>
           <div className="product-grid">
             <RecomendationSection
@@ -151,13 +157,10 @@ const HomePage = () => {
           </div>
         </div>
         {/* .............Newsletter Section--------------- */}
-        <Section>
-          <Newsletter></Newsletter>
-        </Section>
-        {/* .....................Footer Section--------------- */}
-        <Section>
-          <Footer></Footer>
-        </Section>
+      </Section>
+      <Section>
+        <Newsletter
+        ></Newsletter>
       </Section>
     </div>
   );
