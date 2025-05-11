@@ -10,10 +10,12 @@ import HomePage from "../pages/HomePage";
 import ShopPage from "../pages/ShopPage";
 import AboutPage from "../pages/AboutPage";
 import ContactPage from "../pages/ContactPage";
+import ScrollToTop from "./Location";
 
 const Routing = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />

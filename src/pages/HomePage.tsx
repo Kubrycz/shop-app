@@ -19,6 +19,7 @@ import RecomendationSection from "../components/RecomendationSection";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
+import "../SCSS/components/Scroll.scss";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -34,7 +35,9 @@ const HomePage = () => {
               Handcrafted perfumes inspired by nature's elements, designed for
               those who appreciate minimalist luxury and oragnic essences.
             </p>
-            <button className="shop-button" onClick={()=> navigate("/shop")}>Shop Collection</button>
+            <button className="shop-button" onClick={() => navigate("/shop")}>
+              Shop Collection
+            </button>
           </div>
           <div className="image-container">
             <img
@@ -45,8 +48,10 @@ const HomePage = () => {
           </div>
         </div>
       </Section>
+
       <Section>
         {/* ----------------Product Section------------- */}
+
         <div className="flex-container flex-container--items-start">
           <div className="image-container sticky top-24">
             <img
@@ -91,6 +96,7 @@ const HomePage = () => {
           </IngrediensTextSection>
         </div>
       </Section>
+
       <Section>
         {/* ---------Recomendation Section------------ */}
         <div className="section-container">
@@ -125,6 +131,7 @@ const HomePage = () => {
           </div>
         </div>
       </Section>
+
       {/* -----------Our Story Section-------------- */}
       <Section>
         <div className="flex-container">
@@ -159,8 +166,7 @@ const HomePage = () => {
         {/* .............Newsletter Section--------------- */}
       </Section>
       <Section>
-        <Newsletter
-        ></Newsletter>
+        <Newsletter></Newsletter>
       </Section>
     </div>
   );
