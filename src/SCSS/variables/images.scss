@@ -193,3 +193,22 @@
   background-position: center;
   z-index: 1;
 }
+
+// ..................visitConnect.............
+.icon-and-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem; 
+
+}
+
+.Connect-icon-circle {
+  background-color: #eee;
+  margin-top: 0.8rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $font-color-light;
+}
