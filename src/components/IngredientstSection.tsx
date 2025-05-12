@@ -17,6 +17,7 @@ const IngrediensSection = ({ children, title }: SectionProps) => {
           </span>
           <i className="fa fa-chevron-down"></i>
         </h3>
+        
         <p className="font-medium">{children}</p>
       </div>
     </div>

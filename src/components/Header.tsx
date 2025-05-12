@@ -25,7 +25,7 @@ const Header = () => {
           <button className="icon">
             <i className="fas fa-search" />
           </button>
-          <button className="icon">
+          <button className="icon" onClick={()=>navigate("/shoppingCard")}>
             <i className="fas fa-shopping-bag" />
           </button>
         </div>

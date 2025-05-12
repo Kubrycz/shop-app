@@ -3,6 +3,8 @@ import "../SCSS/variables/buttons.scss";
 import "../SCSS/variables/images.scss";
 import "../SCSS/variables/fonts.scss";
 import Section from "./Section";
+import { DualScreenClosedAlert20Filled } from "@fluentui/react-icons";
+
 
 interface Product {
   id: number;

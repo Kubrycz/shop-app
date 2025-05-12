@@ -11,11 +11,12 @@ import ShopPage from "../pages/ShopPage";
 import AboutPage from "../pages/AboutPage";
 import ContactPage from "../pages/ContactPage";
 import ScrollToTop from "./Location";
+import ShoppingCardPage from "../pages/ShoppingCardPage";
 
 const Routing = () => {
   return (
     <BrowserRouter>
-      <ScrollToTop/>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
@@ -24,6 +25,7 @@ const Routing = () => {
           <Route path="about" element={<AboutPage />} />
           <Route path="contact" element={<ContactPage />} />
         </Route>
+        <Route path="shoppingCard" element={<ShoppingCardPage />} />
       </Routes>
     </BrowserRouter>
   );
