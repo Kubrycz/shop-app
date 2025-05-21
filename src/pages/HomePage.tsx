@@ -14,12 +14,12 @@ import "../SCSS/variables/images.scss";
 import "../SCSS/variables/buttons.scss";
 import "../SCSS/components/RecomendationSection.scss";
 import Section from "../components/Section";
-import IngrediensTextSection from "../components/IngredientsTextSection";
-import RecomendationSection from "../components/RecomendationSection";
+import IngrediensTextSection from "../components/HomePageSection/IngredientsTextSection";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
 import "../SCSS/components/Scroll.scss";
+import RecomendationSection from "../components/HomePageSection/RecomendationSection";
 
 const HomePage = () => {
   const navigate = useNavigate();

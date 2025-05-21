@@ -7,6 +7,7 @@ import "../SCSS/components/Products.scss";
 import AboutPageJourney from "../components/AboutPageSection/AboutPageJourney";
 import Section from "../components/Section";
 import Newsletter from "../components/Newsletter";
+import ScrollSection from "../components/ScrollSection";
 
 const AboutPage = () => {
   return (
@@ -25,16 +26,21 @@ const AboutPage = () => {
           </div>
         </div>
       </SectionFull>
+
       {/* ...............Section Image............ */}
-      <ImageSection />
-      {/* ........................Section Our Philosophy............... */}
-      <OurPhilosophySection />
+      <ScrollSection />
+      <section id="scrollAbout-section">
+        <ImageSection />
+
+        {/* ........................Section Our Philosophy............... */}
+        <OurPhilosophySection />
+      </section>
       {/* ..........Section About Journey........ */}
       <AboutPageJourney />
       <Section>
         <Newsletter></Newsletter>
       </Section>
     </div>
-  )
+  );
 };
 export default AboutPage;

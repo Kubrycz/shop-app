@@ -10,6 +10,7 @@ import GetInTouch from "../components/ContactPageSection/GetInTouch";
 import VisitConnect from "../components/ContactPageSection/VisitConnect";
 import VisitAtelier from "../components/ContactPageSection/VisitOurAtelier";
 import QuestionSection from "../components/ContactPageSection/QuestionSection";
+import ScrollSection from "../components/ScrollSection";
 
 const ContactUs = () => {
   return (
@@ -27,8 +28,11 @@ const ContactUs = () => {
           </div>
         </div>
       </SectionFull>
+      <ScrollSection />
+      <section id="scrollAbout-section">
       {/* ................Get in touch section................ */}
-      <GetInTouch />
+        <GetInTouch />
+        </section>
       {/* ..............Section Visit & Connect............. */}
       <VisitConnect />
       {/* ....................Section Visit Our Atelier............ */}

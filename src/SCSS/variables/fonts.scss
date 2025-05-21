@@ -5,7 +5,7 @@ $font: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 $font-size-headline: 3rem;
 $font-size-medium-headline: 1.875rem;
 $font-size-small-headline: 1.5rem;
-$font-size-label:1rem;
+$font-size-label: 1rem;
 
 .text-content {
   width: 180%;
@@ -106,4 +106,14 @@ $font-size-label:1rem;
   font-size: $font-size-small-headline;
   margin-bottom: 0.5rem;
   line-height: 2rem;
+}
+.backHome-shopCard {
+  color: $font-color;
+  font-size: $font-size-small-headline;
+  font-family: $font;
+
+}
+.backHome-shopCard--center{
+    text-align: center;
+  justify-content: center;
 }

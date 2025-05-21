@@ -1,8 +1,8 @@
 import React from "react";
-import "../SCSS/pages/HomeContainer.scss";
-import "../SCSS/variables/fonts.scss";
-import "../SCSS/variables/images.scss";
-import "../SCSS/components/RecomendationSection.scss"
+import "../../SCSS/pages/HomeContainer.scss";
+import "../../SCSS/variables/fonts.scss";
+import "../../SCSS/variables/images.scss";
+import "../../SCSS/components/RecomendationSection.scss"
 
 interface SectionProps {
   alt: string;

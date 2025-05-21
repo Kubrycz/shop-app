@@ -4,16 +4,8 @@ import "../SCSS/variables/images.scss";
 import "../SCSS/variables/fonts.scss";
 import Section from "./Section";
 import { DualScreenClosedAlert20Filled } from "@fluentui/react-icons";
-
-
-interface Product {
-  id: number;
-  name: string;
-  category: string;
-  description: string;
-  price: string;
-  image: string;
-}
+import Product from "../models/products";
+import { useProductContext } from "../globalState/globalState";
 
 interface ProductSectionProps {
   selectedCategory: string;
@@ -34,6 +26,7 @@ const ProductSection: React.FC<ProductSectionProps> = ({
   setSelectedCategory,
   products,
 }) => {
+  const { basket, addToBasket, removeFromBasket } = useProductContext();
   return (
     <div style={{ marginTop: "4rem" }}>
       <div className="button-container">
@@ -67,10 +60,15 @@ const ProductSection: React.FC<ProductSectionProps> = ({
                   <h3 className="font-medium-dark">{product.name}</h3>
                   <p className="font-medium">{product.description}</p>
                   <p className="font-medium">
-                    {product.price}
-                    {/* ${parseFloat(product.price).toFixed(2)} */}
+                    {/* {product.price} */}$
+                    {parseFloat(product.price).toFixed(2)}
                   </p>
-                  <button className="shop-button shop-button--full-width">
+                  <button
+                    className="shop-button shop-button--full-width"
+                    onClick={() => {
+                      addToBasket(product);
+                    }}
+                  >
                     Add to Cart
                   </button>
                 </div>

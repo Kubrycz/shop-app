@@ -7,14 +7,15 @@ import DiscoverySet from "../assets/images/DiscoverySet.jpg";
 import LimitedEdition from "../assets/images/LimitedEdition.jpg";
 import TravelCollection from "../assets/images/TravelCollection.jpg";
 import EssencePure from "../assets/images/EssencePure.jpg";
+import Product from "../models/products";
 
-const products = [
+const products: Product[] = [
   {
     id: 1,
     name: "Elemental No.1",
     category: "signature",
     description: "Bergamot & White Sage",
-    price: "$120.00",
+    price: "120.0",
     image: ElementalNo1,
   },
   {
@@ -22,7 +23,7 @@ const products = [
     name: "Elemental No.2",
     category: "signature",
     description: "Citrus & Cedar Blend",
-    price: "$110.00",
+    price: "110.0",
     image: ElementalNo2,
   },
   {
@@ -30,7 +31,7 @@ const products = [
     name: "Elemental No.3",
     category: "signature",
     description: "Amber & Sandalwood",
-    price: "$130.00",
+    price: "130.0",
     image: ElementalNo3,
   },
   {
@@ -38,7 +39,7 @@ const products = [
     name: "Summer Collection",
     category: "seasonal",
     description: "Light Floral Blend",
-    price: "$95.00",
+    price: "95.0",
     image: SummerCollection,
   },
   {
@@ -46,7 +47,7 @@ const products = [
     name: "Winter Edition",
     category: "seasonal",
     description: "Warm Spice & Wood",
-    price: "$115.00",
+    price: "115.0",
     image: WinterEdition,
   },
   {
@@ -54,7 +55,7 @@ const products = [
     name: "Discovery Set",
     category: "sets",
     description: "3 x 15ml Collection",
-    price: "$160.00",
+    price: "160.0",
     image: DiscoverySet,
   },
   {
@@ -62,7 +63,7 @@ const products = [
     name: "Limited Edition",
     category: "limited",
     description: "Rose & Oud Blend",
-    price: "$150.00",
+    price: "50.0",
     image: LimitedEdition,
   },
   {
@@ -70,7 +71,7 @@ const products = [
     name: "Travel Collection",
     category: "sets",
     description: "4 x 10ml Set",
-    price: "$85.00",
+    price: "85.0",
     image: TravelCollection,
   },
   {
@@ -78,7 +79,7 @@ const products = [
     name: "Essence Pure",
     category: "signature",
     description: "Clean & Fresh Notes",
-    price: "$105.00",
+    price: "105.0",
     image: EssencePure,
   },
 ];

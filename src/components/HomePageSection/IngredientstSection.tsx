@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
-import "../SCSS/components/IngredientsSection.scss";
-import "../SCSS/variables/fonts.scss";
+import "../../SCSS/components/IngredientsSection.scss";
+import "../../SCSS/variables/fonts.scss";
 
 interface SectionProps {
   children: ReactNode;

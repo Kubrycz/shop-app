@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Section from "../components/Section";
-import ProductSection from "../components/ProductSection";
 import products from "../data/Products";
-
+import ScrollSection from "../components/ScrollSection";
+import ProductSection from "../components/ProductSection";
 
 const ShopPage = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -28,13 +28,16 @@ const ShopPage = () => {
         </div>
       </div>
       {/* // ............Section with products............. */}
-      <div>
-        <ProductSection
-          selectedCategory={selectedCategory}
-          setSelectedCategory={setSelectedCategory}
-          products={filteredProducts}
-        />
-      </div>
+      <ScrollSection />
+      <section id="scroll-section">
+        <div>
+          <ProductSection
+            selectedCategory={selectedCategory}
+            setSelectedCategory={setSelectedCategory}
+            products={filteredProducts}
+          />
+        </div>
+      </section>
     </div>
   );
 };
