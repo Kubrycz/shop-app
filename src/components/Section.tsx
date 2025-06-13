@@ -8,7 +8,7 @@ interface SectionProps {
 const Section = ({ children }: SectionProps) => {
   return (
     <div className="section-container">
-      <div className="container">
+      <div className="cotainer">
         {children}
       </div>
     </div>

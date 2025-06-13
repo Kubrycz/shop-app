@@ -4,8 +4,6 @@ import "../SCSS/components/ShoppingCardPage.scss";
 import { useNavigate } from "react-router-dom";
 import Section from "../components/Section";
 import ListProduct from "../components/ListProductContext";
-import products from "../data/Products";
-
 
 const ShoppingCard = () => {
   const navigate = useNavigate();
@@ -47,7 +45,7 @@ const ShoppingCard = () => {
       <div>
         <Section>
           <div>
-            <ListProduct/>
+            <ListProduct />
           </div>
         </Section>
       </div>

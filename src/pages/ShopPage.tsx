@@ -1,16 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Section from "../components/Section";
 import products from "../data/Products";
 import ScrollSection from "../components/ScrollSection";
 import ProductSection from "../components/ProductSection";
+import Product from "../models/products";
 
 const ShopPage = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
+  const [productsData, setProductsData] = useState<Product[]>([]);
+
+  //const productsObj = await products();
+  useEffect(() => {
+    const handler = async () => {
+      const result = await products();
+      setProductsData(result);
+    };
+    handler();
+  }, []);
 
   const filteredProducts =
     selectedCategory === "all"
-      ? products
-      : products.filter((product) => product.category === selectedCategory);
+      ? productsData
+      : productsData.filter((product) => product.category === selectedCategory);
 
   return (
     <div>
