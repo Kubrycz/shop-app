@@ -1,0 +1,26 @@
+@use "../variables/colors.scss" as *;
+@use "../variables/fonts.scss" as *;
+
+.product-info {
+  margin-top: 2rem;
+}
+
+.info-item {
+  margin-bottom: 1rem;
+}
+
+.info-title {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.info-title span {
+  font-size: 1rem;
+}
+
+.icon {
+  margin-left: 0.5rem;
+}

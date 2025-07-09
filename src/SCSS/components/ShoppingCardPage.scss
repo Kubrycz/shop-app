@@ -1,0 +1,97 @@
+@use "../variables/colors.scss" as *;
+@use "../variables/fonts.scss" as *;
+
+.header-shop {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: $background;
+  user-select: none;
+  caret-color: transparent;
+
+  .container-shop {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: 768px) {
+      max-width: 768px;
+    }
+
+    @media (min-width: 1256px) {
+      max-width: 1256px;
+    }
+
+    @media (min-width: 1500px) {
+      max-width: 1500px;
+    }
+
+    @media (min-width: 2000px) {
+      max-width: 2000px;
+    }
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-family: $logo;
+    letter-spacing: 0.05em;
+    color: $font-color;
+    cursor: pointer;
+  }
+}
+
+.container-backHome {
+  display: flex;
+  height: 6rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  align-items: strech;
+  justify-content: center;
+}
+// ...........................................................
+
+
+.shop-card-grid {
+  display: grid;
+  gap: 6rem;
+  align-items: flex-start;
+    background-color: blue;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.shop-card {
+  position: relative;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  display: flex;
+   padding: 1.5rem; 
+}
+.shop-card--second {
+  width: 70%;
+  gap:2rem;
+}
+
+.shop-card-grid-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  border-radius: 0.375rem;
+  gap:1.5rem;
+}

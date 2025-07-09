@@ -1,0 +1,11 @@
+{
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "lint",
+      "problemMatcher": [],
+      "label": "npm: lint",
+      "detail": "eslint \"src/**/*.{ts,tsx}\" --quiet"
+    }
+  ]
+}
