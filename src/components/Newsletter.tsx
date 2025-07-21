@@ -1,4 +1,3 @@
-import React, { ReactNode } from "react";
 import "../SCSS/variables/colors.scss";
 import "../SCSS/variables/fonts.scss";
 

@@ -38,8 +38,8 @@ const GetInTouch = () => {
             value.trim() === ""
               ? "Email is required"
               : mailRegex.test(value)
-              ? ""
-              : "Correct form is: *.*@gmail.com",
+                ? ""
+                : "Correct form is: *.*@gmail.com",
         });
         break;
 
@@ -81,8 +81,8 @@ const GetInTouch = () => {
         formData.email.trim() === ""
           ? "Email is required"
           : !mailRegex.test(formData.email)
-          ? "Correct form is: *.*@gmail.com"
-          : "",
+            ? "Correct form is: *.*@gmail.com"
+            : "",
       subject: formData.subject.trim() === "" ? "Subject is required" : "",
       message: formData.message.trim() === "" ? "Message is required" : "",
     };
@@ -96,14 +96,11 @@ const GetInTouch = () => {
     }
 
     try {
-      const response = await fetch(
-        `https://681fb6be72e59f922ef6f24d.mockapi.io/Contact`,
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData),
-        }
-      );
+      const response = await fetch(`${process.env.REACT_APP_CONTACT_API}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
       if (!response.ok) {
         throw new Error("Error, can't send message!");

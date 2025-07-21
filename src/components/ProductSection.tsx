@@ -1,9 +1,8 @@
-import React, { useState } from "react";
 import "../SCSS/variables/buttons.scss";
 import "../SCSS/variables/images.scss";
 import "../SCSS/variables/fonts.scss";
 import Section from "./Section";
-import { DualScreenClosedAlert20Filled } from "@fluentui/react-icons";
+
 import Product from "../models/products";
 import { useProductContext } from "../globalState/globalState";
 
@@ -26,7 +25,7 @@ const ProductSection: React.FC<ProductSectionProps> = ({
   setSelectedCategory,
   products,
 }) => {
-  const { basket, addToBasket, removeFromBasket } = useProductContext();
+  const { addToBasket } = useProductContext();
   return (
     <div style={{ marginTop: "4rem" }}>
       <div className="button-container">

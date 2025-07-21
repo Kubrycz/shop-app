@@ -17,17 +17,12 @@ interface SectionProps {
 const IngrediensTextSection = ({
   title,
   price,
-  testFn,
   children,
   ingredients,
   ingredients2,
   ingredients3,
 }: SectionProps) => {
   const [selectedSize, setSelectedSize] = useState("50ml");
-
-  function testFunc() {
-    throw new Error("Function not implemented.");
-  }
 
   return (
     <div className="text-content">
