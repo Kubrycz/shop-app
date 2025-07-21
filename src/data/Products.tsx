@@ -10,10 +10,8 @@ import EssencePure from "../assets/images/EssencePure.jpg";
 import Product from "../models/products";
 
 export async function products(): Promise<Product[]> {
-  return await fetchData<Product[]>(
-    "https://681fb6be72e59f922ef6f24d.mockapi.io/Product",
-    httpMethod.GET
-  );
+  const baseUrl = process.env.REACT_APP_API_URL;
+  return await fetchData<Product[]>(`${baseUrl}/Product`, httpMethod.GET);
 
   const result = [
     {

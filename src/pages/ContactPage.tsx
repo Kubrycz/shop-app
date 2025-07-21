@@ -1,5 +1,3 @@
-import { useState } from "react";
-import Section from "../components/Section";
 import SectionFull from "../components/SectionFull";
 import "../SCSS/variables/colors.scss";
 import "../SCSS/variables/fonts.scss";

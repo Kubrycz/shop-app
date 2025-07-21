@@ -1,10 +1,8 @@
 import React from "react";
-import Product from "../models/products";
 import "../SCSS/variables/buttons.scss";
 import "../SCSS/variables/images.scss";
 import "../SCSS/variables/fonts.scss";
 import "../SCSS/variables/buttons.scss";
-import { ButtonGlobalClassNames } from "@fluentui/react";
 import { useProductContext } from "../globalState/globalState";
 import "../SCSS/components/ListProductContext.scss";
 // type ProductListProps = {
@@ -14,7 +12,7 @@ import "../SCSS/components/ListProductContext.scss";
 // };
 
 const ListProduct: React.FC = () => {
-  const { basket, addToBasket, removeFromBasket } = useProductContext();
+  const { basket, removeFromBasket } = useProductContext();
   return (
     <div className="listContext-wrapper">
       {basket.map((product) => (
