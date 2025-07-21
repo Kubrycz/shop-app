@@ -99,7 +99,7 @@ enum httpMethod {
 
 async function fetchData<T>(url: string, method: httpMethod): Promise<T> {
   const tst = await fetch(url, {
-    method: "GET",
+    method: httpMethod[method],
     headers: { "content-type": "application/json" },
   });
   const res = tst.json();

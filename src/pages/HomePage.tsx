@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import perfumeImage from "../assets/images/6d7ada87bbd5977c1548dfaa328e0e31.jpg";
 import perfumeImage2 from "../assets/images/2.jpg";
 import perfumeImage3 from "../assets/images/3.jpg";
@@ -16,7 +15,6 @@ import "../SCSS/components/RecomendationSection.scss";
 import Section from "../components/Section";
 import IngrediensTextSection from "../components/HomePageSection/IngredientsTextSection";
 import Newsletter from "../components/Newsletter";
-import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
 import "../SCSS/components/Scroll.scss";
 import RecomendationSection from "../components/HomePageSection/RecomendationSection";
