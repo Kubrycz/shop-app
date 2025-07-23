@@ -1,6 +1,4 @@
-import React from "react";
 import Section from "../Section";
-import AboutPagePhoto from "../../assets/images/AboutPagePhoto.jpg";
 
 const ImageSection = () => {
     return (
@@ -9,7 +7,7 @@ const ImageSection = () => {
           <div className="flex-container">
             <div className="image-container">
               <img
-                src={AboutPagePhoto}
+                src="/images/AboutPagePhoto.jpg"
                 alt="Luxury perfume with natural elements"
                 className="custom-img"
               />

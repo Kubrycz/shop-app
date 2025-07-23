@@ -1,13 +1,3 @@
-import perfumeImage from "../assets/images/6d7ada87bbd5977c1548dfaa328e0e31.jpg";
-import perfumeImage2 from "../assets/images/2.jpg";
-import perfumeImage3 from "../assets/images/3.jpg";
-import perfumeImage4 from "../assets/images/4.jpg";
-import perfumeImage5 from "../assets/images/5.jpg";
-import perfumeImage6 from "../assets/images/6.jpg";
-import perfumeNo2 from "../assets/images/No2.jpg";
-import perfumeNo3 from "../assets/images/No3.jpg";
-import perfumeElementalCollection from "../assets/images/ElementalCollection.jpg";
-import OurStory from "../assets/images/OurStory.jpg";
 import "../SCSS/pages/HomeContainer.scss";
 import "../SCSS/variables/images.scss";
 import "../SCSS/variables/buttons.scss";
@@ -39,7 +29,7 @@ const HomePage = () => {
           </div>
           <div className="image-container">
             <img
-              src={perfumeImage}
+              src="/images/perfumeImage.jpg"
               alt="Luxury perfume with natural elements"
               className="custom-img"
             />
@@ -53,28 +43,28 @@ const HomePage = () => {
         <div className="flex-container flex-container--items-start">
           <div className="image-container sticky top-24">
             <img
-              src={perfumeImage2}
+              src="/images/perfumeImage2.jpg"
               alt="Luxury perfume with natural elements"
               className="custom-img"
             />
             <div className="image-gallery">
               <img
-                src={perfumeImage3}
+                src="/images/perfumeImage3.jpg"
                 alt="Luxury perfume with natural elements"
                 className="gallery-image"
               />
               <img
-                src={perfumeImage4}
+                src="/images/perfumeImage4.jpg"
                 alt="Luxury perfume with natural elements"
                 className="gallery-image"
               />
               <img
-                src={perfumeImage5}
+                src="/images/perfumeImage5.jpg"
                 alt="Luxury perfume with natural elements"
                 className="gallery-image"
               />
               <img
-                src={perfumeImage6}
+                src="/images/perfumeImage6.jpg"
                 alt="Luxury perfume with natural elements"
                 className="gallery-image"
               />
@@ -106,21 +96,21 @@ const HomePage = () => {
           </div>
           <div className="product-grid">
             <RecomendationSection
-              src={perfumeNo2}
+              src="/images/perfumeNo2.jpg"
               alt="Elemental No.2"
               elemental="Elemental No.2"
               smell=" Citrus & Cedar Blend"
               price="$110.00"
             ></RecomendationSection>
             <RecomendationSection
-              src={perfumeNo3}
+              src="/images/perfumeNo3.jpg"
               alt="Elemental No.3"
               elemental="Elemental No.3"
               smell=" Amber & Sandalwood"
               price="$130.00"
             ></RecomendationSection>
             <RecomendationSection
-              src={perfumeElementalCollection}
+              src="/images/perfumeElementalCollection.jpg"
               alt="Elemental Collection"
               elemental="Elemental Collection"
               smell=" Gift Set (3 x 15ml)"
@@ -135,7 +125,7 @@ const HomePage = () => {
         <div className="flex-container">
           <div className="image-container">
             <img
-              src={OurStory}
+              src="/images/OurStory.jpg"
               alt="Luxury perfume with natural elements"
               className="custom-img"
             />

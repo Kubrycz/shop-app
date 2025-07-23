@@ -2,7 +2,6 @@ import "../../SCSS/variables/colors.scss";
 import "../../SCSS/variables/fonts.scss";
 import "../../SCSS/components/ContactForm.scss";
 import "../../SCSS/variables/fonts.scss";
-import Atelier from "../../assets/images/Atelier.jpg";
 import Section from "../Section";
 
 const VisitAtelier = () => {
@@ -51,7 +50,7 @@ const VisitAtelier = () => {
           </div>
           <div className="image-container">
             <img
-              src={Atelier}
+              src="/images/Atelier.jpg"
               alt="Luxury perfume with natural elements"
               className="custom-img"
             />

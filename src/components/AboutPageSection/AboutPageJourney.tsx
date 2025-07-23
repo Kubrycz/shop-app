@@ -1,9 +1,5 @@
 import Section from "../Section";
 import "../../SCSS/components/Products.scss";
-import AboutPage1 from "../../assets/images/AboutPage1.jpg";
-import AboutPage2 from "../../assets/images/AboutPage2.jpg";
-import AboutPage3 from "../../assets/images/AboutPage3.jpg";
-import AboutPage4 from "../../assets/images/AboutPage4.jpg";
 import "../../SCSS/variables/images.scss";
 
 const JourneySection = () => {
@@ -25,7 +21,7 @@ const JourneySection = () => {
                 {" "}
                 <div className="image-wrapper">
                   <img
-                    src={AboutPage1}
+                    src="/images/AboutPage1.jpg"
                     alt="Luxury perfume with natural elements"
                     className="custom-img"
                   />
@@ -47,7 +43,7 @@ const JourneySection = () => {
                 {" "}
                 <div className="image-wrapper">
                   <img
-                    src={AboutPage2}
+                    src="/images/AboutPage2.jpg"
                     alt="Luxury perfume with natural elements"
                     className="custom-img"
                   />
@@ -69,7 +65,7 @@ const JourneySection = () => {
                 {" "}
                 <div className="image-wrapper">
                   <img
-                    src={AboutPage3}
+                    src="/images/AboutPage3.jpg"
                     alt="Luxury perfume with natural elements"
                     className="custom-img"
                   />
@@ -93,7 +89,7 @@ const JourneySection = () => {
                 {" "}
                 <div className="image-wrapper">
                   <img
-                    src={AboutPage4}
+                    src="/images/AboutPage4.jpg"
                     alt="Luxury perfume with natural elements"
                     className="custom-img"
                   />
